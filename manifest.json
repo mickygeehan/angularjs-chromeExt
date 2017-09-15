@@ -1,0 +1,19 @@
+{
+    "name": "AngularChromeExt",
+    "description": "nothing yet",
+    "manifest_version": 2,
+    "version": "1.0",
+    "browser_action":{
+        "default_popup": "popup.html"
+    },
+    "content_scripts":[{
+        "js": ["js/jquery.js", "js/content.js"],
+        "matches": ["*://*/*"],
+        "run_at": "document_start"
+    }],
+    "permissions": ["http://*/*", "https://*/*", "tabs"]
+
+
+
+
+}
